@@ -25,7 +25,7 @@ we'll reboot the VM manually:
 `[vagrant@default-fedora-20 ~]$` prompt `sudo reboot`.
 
 In a few moments we should be able to verify a Haskell program
-will run directly by the Xen hypervisor: `bundle exec kitchen verify`
+will run directly on the Xen hypervisor: `bundle exec kitchen verify`
 
 To play... login and try some examples:
 
