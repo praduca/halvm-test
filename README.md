@@ -27,7 +27,7 @@ we'll reboot the VM manually:
 In a few moments we should be able to verify a Haskell program
 will run directly by the Xen hypervisor: `bundle exec kitchen verify`
 
-To play login and try some examples:
+To play... login and try some examples:
 
 ```
 bundle exec kitchen login
