@@ -8,6 +8,7 @@ This cookbook tries to build a viable HaLVM environment using
 ## Requirements
 
 * Ruby
+* [Vagrant VMware plugin](https://www.vagrantup.com/vmware)
 * VMware (for nested hypervisor support)
 
 ## Usage
