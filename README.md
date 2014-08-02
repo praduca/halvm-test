@@ -7,31 +7,30 @@ This cookbook tries to build a viable HaLVM environment using
 
 ## Requirements
 
-* Ruby
+* [ChefDK](http://downloads.getchef.com/chef-dk/)
 * [Vagrant VMware plugin](https://www.vagrantup.com/vmware)
 * VMware (for nested hypervisor support)
 
 ## Usage
 
 ```
-bundle install
-bundle exec kitchen converge
+kitchen converge
 ```
 
 Expect to wait between twenty minutes and a couple hours for the VM to
 converge. Once the VM has converged we want to load the Xen kernel so
 we'll reboot the VM manually:
 
-`bundle exec kitchen login` and at the
+`kitchen login` and at the
 `[vagrant@default-fedora-20 ~]$` prompt `sudo reboot`.
 
 In a few moments we should be able to verify a Haskell program
-will run directly on the Xen hypervisor: `bundle exec kitchen verify`
+will run directly on the Xen hypervisor: `kitchen verify`
 
 To play... login and try some examples:
 
 ```
-bundle exec kitchen login
+kitchen login
 cd HaLVM/examples/Core/Xenstore
 make run
 ```
